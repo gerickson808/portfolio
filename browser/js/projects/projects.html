@@ -1,0 +1,11 @@
+<div class="row fill-parent bg-lightbrown">
+	<div class="scroll col-sm-2 fill-height flex-container flex-mid flex-vert bg-maroon box-shadow">
+		<div class="logo-box box-shadow bg-lightbrown flex-container flex-vert flex-center flex-mid" ng-repeat="project in projects" ng-click="showProject(project)">
+			<img ng-src="{{project.logoUrl}}">
+			<h4>{{project.name}}</h4>
+		</div>
+	</div>
+	<div class="scroll col-sm-10 fill-height">
+		<ui-view></ui-view>
+	</div>
+</div>

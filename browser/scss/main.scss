@@ -15,8 +15,47 @@ body {
 }
 
 #main {
-  padding-top: 60px;
+  padding-top: 50px;
+  height:100vh;
+  width:100vw;
+  overflow:hidden;
   margin: 0 auto;
+}
+
+.flex-container {
+	display:flex;
+}
+
+.flex-vert{
+	flex-direction:column;
+}
+
+.flex-center {
+	justify-content: space-around;
+}
+
+.flex-mid {
+	align-items: center;
+}
+
+.fill-height{
+  height:100%;
+}
+
+.fill-width{
+  width:100%;
+}
+.fill-parent{
+  height:100%;
+  width:100%;
+}
+
+.row {
+  margin:0;
+}
+
+.box-shadow{
+	box-shadow:2px 2px 2px rgba(0,0,0,0.4);
 }
 
 @import 'directives/main';
@@ -25,3 +64,5 @@ body {
 @import 'tutorial/main';
 @import 'login/main';
 @import 'landing-page';
+@import 'color-scheme';
+@import 'projects/main';

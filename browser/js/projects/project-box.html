@@ -1,0 +1,14 @@
+<div class="project-box scroll">
+	<img ng-src="{{currentImage}}" class="box-shadow">
+	<div class="img-block box-shadow" ng-repeat="image in project.imageLinks">
+		<img ng-src="{{image}}" ng-click="showImage(image)">
+	</div>
+	<h3>{{project.name}}</h3>
+	<p>{{project.description}}</p>
+	<div class="flex-container flex-center">
+		<div class="flex-container flex-center link-box">
+			<a href="{{project.repoLink}}">Github Repo</a>
+			<a ng-hide="hideLink()" href="{{project.deployedLink}}">Try it!</a>
+		</div>
+	</div>
+</div>

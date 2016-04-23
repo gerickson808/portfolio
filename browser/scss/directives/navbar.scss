@@ -26,11 +26,11 @@ navbar {
     cursor: pointer;
     transition: color 0.2s;
     &.active {
-      color: darken(#f31214, 10%);
+      color: lighten(#963545,15%);
     }
     &:hover {
       background: none;
-      color: #f31214;
+      color: #FFCE1E;
     }
     &:focus {
       background: none;
@@ -57,6 +57,14 @@ navbar {
       color: #f30046;
       cursor: pointer;
     }
+  }
+
+  .navbar-brand{
+    transition:color 0.2s;
+    &:hover{
+      background:none;
+      color:#FFCE1E;
+    };
   }
 
 }

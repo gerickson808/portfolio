@@ -1,7 +1,7 @@
 {
-  "name": "FullstackGeneratedApp",
+  "name": "Portfolio",
   "version": "1.0.0",
-  "description": "A generated project at Fullstack Academy",
+  "description": "A collection of projects by Gus Erickson",
   "main": "server/start.js",
   "scripts": {
     "start": "nodemon --watch server -e js,html server/start.js",
